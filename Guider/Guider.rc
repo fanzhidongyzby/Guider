@@ -1,0 +1,678 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Guider.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#include ""afxprint.rc""       // 打印/打印预览资源\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Guider.ico"
+IDR_GuiderTYPE          ICON                    "res\\GuiderDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BITMAP1             BITMAP                  "res\\中国石油大学-图标].bmp"
+IDB_BITMAP2             BITMAP                  "res\\中国石油大学.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_REFRASH
+    SEPARATOR
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_BUTTON32795
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_BUTTON32796
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 Guider(&A)...",            ID_APP_ABOUT
+    END
+    POPUP "设置(&S)"
+    BEGIN
+        MENUITEM "动态设置(&D)",                    ID_APP_SET
+        MENUITEM "静态设置(&S)",                    ID_STATIC_SET
+    END
+END
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "1"
+    BEGIN
+        POPUP "添加(&A)"
+        BEGIN
+            MENUITEM "地点(&S)\tSpace",               ID_ADD_SITE
+            MENUITEM "路径(&R)",                      ID_ADD_ROUTE
+        END
+        MENUITEM "删除(&D)\tDel",                 ID_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "刷新(&E)\tF",                   ID_REFRASH
+        MENUITEM "最短路径(&S)",                    ID_SHORTEST_ROUTE
+        MENUITEM SEPARATOR
+        MENUITEM "属性(&R)\tEnter",               ID_ATTRIBUTE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_SPACE,       ID_ADD_SITE,            VIRTKEY, NOINVERT
+    VK_DELETE,      ID_DELETE,              VIRTKEY, NOINVERT
+    "F",            ID_REFRASH,             VIRTKEY, NOINVERT
+    VK_RETURN,      ID_ATTRIBUTE,           VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Guider"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Guider 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_DIALOG_APP_SET DIALOGEX 0, 0, 353, 328
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "动态全局设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,229,303,50,14
+    PUSHBUTTON      "取消",IDCANCEL,284,303,50,14
+    GROUPBOX        "路径",IDC_STATIC,13,111,320,187
+    COMBOBOX        IDC_COMBO_SS,57,29,50,13,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "形状:",IDC_STATIC,28,31,20,8
+    LTEXT           "颜色：",IDC_STATIC,28,167,25,8
+    LTEXT           "大小：",IDC_STATIC,222,140,25,8
+    GROUPBOX        "地点",IDC_STATIC,13,18,320,90
+    EDITTEXT        IDC_EDIT_RPS,252,137,23,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "像素",IDC_STATIC,281,140,17,8
+    LTEXT           "R:",IDC_STATIC,58,167,8,8
+    LTEXT           "G:",IDC_STATIC,102,167,8,8
+    LTEXT           "B:",IDC_STATIC,150,167,8,8
+    EDITTEXT        IDC_EDIT_RCR,68,165,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_RCG,114,165,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_RCB,162,165,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(0~255)",IDC_STATIC,28,181,28,8
+    LTEXT           "信息：",IDC_STATIC,194,31,25,8
+    EDITTEXT        IDC_SI,219,30,103,48,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "(1~10)",IDC_STATIC,300,140,24,8
+    LTEXT           "折线:",IDC_STATIC,18,125,20,8
+    LTEXT           "折点：",IDC_STATIC,194,127,25,8
+    LTEXT           "宽度：",IDC_STATIC,29,142,25,8
+    EDITTEXT        IDC_EDIT_RW,58,140,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "像素",IDC_STATIC,88,143,17,8
+    LTEXT           "(1~10)",IDC_STATIC,107,143,24,8
+    LTEXT           "颜色：",IDC_STATIC,222,167,25,8
+    LTEXT           "R:",IDC_STATIC,253,167,8,8
+    LTEXT           "G:",IDC_STATIC,252,186,8,8
+    LTEXT           "B:",IDC_STATIC,253,207,8,8
+    EDITTEXT        IDC_EDIT_RPCR,264,165,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_RPCG,264,184,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_RPCB,264,205,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(0~255)",IDC_STATIC,221,181,28,8
+    LTEXT           "信息：",IDC_STATIC,28,207,25,8
+    EDITTEXT        IDC_EDIT_RI,57,205,132,64,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    CONTROL         "是否在路径上显示路径长度",IDC_CHECK_RSL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,276,112,10
+    LTEXT           "颜色：",IDC_STATIC,28,49,25,8
+    LTEXT           "R:",IDC_STATIC,58,49,8,8
+    LTEXT           "G:",IDC_STATIC,102,49,8,8
+    LTEXT           "B:",IDC_STATIC,150,49,8,8
+    EDITTEXT        IDC_EDIT_SCR,68,47,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SCG,114,47,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SCB,162,47,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(0~255)",IDC_STATIC,28,61,28,8
+    LTEXT           "大小：",IDC_STATIC,29,75,25,8
+    EDITTEXT        IDC_EDIT_SS,58,72,23,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "像素",IDC_STATIC,88,75,17,8
+    LTEXT           "(10~20)",IDC_STATIC,106,75,28,8
+    CONTROL         "是否显示地点信息",IDC_CHECK_SSI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,91,80,10
+END
+
+IDD_DIALOG_DYNAMIC_SITE_ATTRIBUTE DIALOGEX 0, 0, 196, 205
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "动态顶点属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,73,173,50,14
+    PUSHBUTTON      "取消",IDCANCEL,127,173,50,14
+    COMBOBOX        IDC_COMBO_DSS,47,52,50,13,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "形状:",IDC_STATIC,19,55,20,8
+    LTEXT           "信息：",IDC_STATIC,19,121,25,8
+    EDITTEXT        IDC_DSI,48,119,127,48,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "颜色：",IDC_STATIC,19,73,25,8
+    LTEXT           "R:",IDC_STATIC,48,73,8,8
+    LTEXT           "G:",IDC_STATIC,92,73,8,8
+    LTEXT           "B:",IDC_STATIC,140,73,8,8
+    EDITTEXT        IDC_EDIT_DSCR,58,71,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_DSCG,104,71,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_DSCB,152,71,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(0~255)",IDC_STATIC,19,84,28,8
+    LTEXT           "大小：",IDC_STATIC,19,98,25,8
+    EDITTEXT        IDC_EDIT_DSS,48,95,23,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "像素",IDC_STATIC,78,98,17,8
+    LTEXT           "(10~20)",IDC_STATIC,96,98,28,8
+    LTEXT           "ID：",IDC_STATIC,20,17,16,8
+    LTEXT           "位置：",IDC_STATIC,19,34,25,8
+    LTEXT           "(X,Y)",IDC_STATIC_DSP,48,34,48,8
+    LTEXT           "0",IDC_STATIC_DSID,47,17,18,8
+END
+
+IDD_DIALOG_DYNAMIC_ROUTE_ATTRIBUTE DIALOGEX 0, 0, 210, 283
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "动态路径属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,73,252,50,14
+    PUSHBUTTON      "取消",IDCANCEL,134,252,50,14
+    LTEXT           "起点   ID1：",IDC_STATIC,23,29,42,8
+    LTEXT           "位置：",IDC_STATIC,106,29,25,8
+    LTEXT           "(X,Y)",IDC_STATIC_DRP1,135,29,47,8
+    LTEXT           "0",IDC_STATIC_DRID1,71,29,18,8
+    LTEXT           "终点   ID2：",IDC_STATIC,23,45,42,8
+    LTEXT           "位置：",IDC_STATIC,106,45,25,8
+    LTEXT           "(X,Y)",IDC_STATIC_DRP2,135,45,46,8
+    LTEXT           "0",IDC_STATIC_DRID2,71,45,18,8
+    LTEXT           "折线：",IDC_STATIC,14,13,25,8
+    LTEXT           "颜色：",IDC_STATIC,23,98,25,8
+    LTEXT           "R:",IDC_STATIC,52,98,8,8
+    LTEXT           "G:",IDC_STATIC,97,98,8,8
+    LTEXT           "B:",IDC_STATIC,145,98,8,8
+    EDITTEXT        IDC_EDIT_DRCR,63,96,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_DRCG,109,96,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_DRCB,157,96,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(0~255)",IDC_STATIC,23,112,28,8
+    LTEXT           "宽度：",IDC_STATIC,23,77,25,8
+    EDITTEXT        IDC_EDIT_DRW,52,75,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "像素",IDC_STATIC,82,78,17,8
+    LTEXT           "(1~10)",IDC_STATIC,102,78,24,8
+    LTEXT           "信息：",IDC_STATIC,23,126,25,8
+    EDITTEXT        IDC_EDIT_DRI,52,124,132,64,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "折点：",IDC_STATIC,16,192,25,8
+    LTEXT           "大小：",IDC_STATIC,27,204,25,8
+    EDITTEXT        IDC_EDIT_DRPS,52,202,23,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "像素",IDC_STATIC,85,204,17,8
+    LTEXT           "(1~10)",IDC_STATIC,107,204,24,8
+    LTEXT           "颜色：",IDC_STATIC,27,230,25,8
+    LTEXT           "R:",IDC_STATIC,53,230,8,8
+    LTEXT           "G:",IDC_STATIC,100,231,8,8
+    LTEXT           "B:",IDC_STATIC,146,230,8,8
+    EDITTEXT        IDC_EDIT_DRPCR,68,228,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_DRPCG,111,227,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_DRPCB,158,228,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(0~255)",IDC_STATIC,26,244,28,8
+    LTEXT           "路径长度：",IDC_STATIC,23,59,41,8
+    LTEXT           "100.78 m",IDC_STATIC_DRL,71,59,117,8
+END
+
+IDD_DIALOG_STATIC_SITE_ATTRIBUTE DIALOGEX 0, 0, 186, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "静态顶点属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,129,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,129,24,50,14
+END
+
+IDD_DIALOG_STATIC_ROUTE_ATTRIBUTE DIALOGEX 0, 0, 340, 271
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "静态全局设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,221,242,50,14
+    PUSHBUTTON      "取消",IDCANCEL,277,242,50,14
+    GROUPBOX        "静态路径",IDC_STATIC,7,102,320,133
+    LTEXT           "颜色：",IDC_STATIC,15,151,25,8
+    LTEXT           "大小：",IDC_STATIC,209,124,25,8
+    GROUPBOX        "静态地点",IDC_STATIC,7,20,320,75
+    EDITTEXT        IDC_EDIT_SRPS,239,121,23,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "像素",IDC_STATIC,268,124,17,8
+    LTEXT           "R:",IDC_STATIC,45,151,8,8
+    LTEXT           "G:",IDC_STATIC,43,171,8,8
+    LTEXT           "B:",IDC_STATIC,43,191,8,8
+    EDITTEXT        IDC_EDIT_SRCR,55,149,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SRCG,55,169,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SRCB,55,189,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(0~255)",IDC_STATIC,15,165,28,8
+    LTEXT           "(1~10)",IDC_STATIC,287,124,24,8
+    LTEXT           "宽度：",IDC_STATIC,16,126,25,8
+    EDITTEXT        IDC_EDIT_SRW,45,124,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "像素",IDC_STATIC,75,127,17,8
+    LTEXT           "(1~10)",IDC_STATIC,94,127,24,8
+    LTEXT           "颜色：",IDC_STATIC,209,151,25,8
+    LTEXT           "R:",IDC_STATIC,240,151,8,8
+    LTEXT           "G:",IDC_STATIC,239,170,8,8
+    LTEXT           "B:",IDC_STATIC,240,191,8,8
+    EDITTEXT        IDC_EDIT_SRPCR,251,149,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SRPCG,251,168,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SRPCB,251,189,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(0~255)",IDC_STATIC,208,165,28,8
+    LTEXT           "颜色：",IDC_STATIC,15,44,25,8
+    LTEXT           "R:",IDC_STATIC,45,44,8,8
+    LTEXT           "G:",IDC_STATIC,89,44,8,8
+    LTEXT           "B:",IDC_STATIC,137,44,8,8
+    EDITTEXT        IDC_EDIT_SSCR,55,42,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SSCG,101,42,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SSCB,149,42,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(0~255)",IDC_STATIC,15,56,28,8
+    LTEXT           "大小：",IDC_STATIC,16,70,25,8
+    EDITTEXT        IDC_EDIT_SSS,45,67,23,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "像素",IDC_STATIC,75,70,17,8
+    LTEXT           "(1~10)",IDC_STATIC,93,70,24,8
+    LTEXT           "寻路路径:",IDC_STATIC,157,125,36,8
+    LTEXT           "速度(1-10)",IDC_STATIC,209,210,37,8
+    EDITTEXT        IDC_EDIT4,251,209,40,14,ES_AUTOHSCROLL
+    CONTROL         "是否显示路径长度",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,221,80,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Guider.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Guider.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_APP_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 321
+    END
+
+    IDD_DIALOG_DYNAMIC_SITE_ATTRIBUTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_DIALOG_DYNAMIC_ROUTE_ATTRIBUTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 276
+    END
+
+    IDD_DIALOG_STATIC_SITE_ATTRIBUTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DIALOG_STATIC_ROUTE_ATTRIBUTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+        VERTGUIDE, 36
+        VERTGUIDE, 96
+        VERTGUIDE, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+        HORZGUIDE, 50
+        HORZGUIDE, 111
+        HORZGUIDE, 164
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_APP_SET DLGINIT
+BEGIN
+    IDC_COMBO_SS, 0x403, 7, 0
+0xfdc8, 0xc7bd, 0xced0, "\000" 
+    IDC_COMBO_SS, 0x403, 5, 0
+0xd8be, 0xced0, "\000" 
+    IDC_COMBO_SS, 0x403, 3, 0
+0xb2d4, "\000" 
+    0
+END
+
+IDD_DIALOG_DYNAMIC_SITE_ATTRIBUTE DLGINIT
+BEGIN
+    IDC_COMBO_DSS, 0x403, 7, 0
+0xfdc8, 0xc7bd, 0xced0, "\000" 
+    IDC_COMBO_DSS, 0x403, 5, 0
+0xd8be, 0xced0, "\000" 
+    IDC_COMBO_DSS, 0x403, 3, 0
+0xb2d4, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "-\n\nGuider\n\n\nGuider.Document\nGuider.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Guider"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_REFRASH              "刷新当前页面"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Guider.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"         // 标准组件
+#include "afxprint.rc"       // 打印/打印预览资源
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
